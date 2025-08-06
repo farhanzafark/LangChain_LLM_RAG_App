@@ -51,13 +51,15 @@ This project implements a Retrieval-Augmented Generation (RAG) chatbot using **L
    python -m venv .venv
    source .venv/bin/activate  # or .venv\Scripts\activate on Windows
    ```
+3. **Prerequisites for Windows Users**
+Before installing dependencies, make sure you have Microsoft Visual Studio with C++ build tools installed, as some packages (e.g., chroma-hnswlib) require a C++ compiler.You can install it by downloading the Visual Studio Installer.
 
-3. **Install dependencies**  
+4. **Install dependencies**  
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Add a `.env` file**  
+5. **Add a `.env` file**  
    Create a `.env` file in the root of the project with the following environment variables. Refer to the [Real Python article](https://realpython.com/build-llm-rag-chatbot-with-langchain/#step-2-understand-the-business-requirements-and-data) for the exact structure and values:
 
    ```env
@@ -67,12 +69,12 @@ This project implements a Retrieval-Augmented Generation (RAG) chatbot using **L
    NEO4J_PASSWORD=your-password
    ```
 
-5. **(Optional) Run with Docker**
+6. **(Optional) Run with Docker**
    ```bash
    docker-compose up --build
    ```
 
-6. **Start the app**
+7. **Start the app**
    You can run the chatbot or API using:
 
    ```bash
